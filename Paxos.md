@@ -2,12 +2,15 @@ distributed consensus algorithm
 
 ### Basic Paxos
 
-Reach consensus single value between multiple process
+Reach consensus single value between multiple process.
+
+Single acceptor? -> failure of acceptor -> no progress
+multiple acceptors -> majority must accept to choose
 
 > Value is chosen once accepted by a majority of acceptors
 
 **Case 1:** only first value is accepted
-Problem: for simultaneous proposal no value might be chosen
+Problem: for simultaneous proposal, every acceptor may have accepted some value but no majority. no value might be chosen
 
 **Case 2:** multiple values can be accepted
 Problem: values can be overwritten even if accepted by majority by a rogue proposer
@@ -29,4 +32,11 @@ we can see still the blue might be overwritten by red if the accept request come
 1. order proposals with unique number. how unique - append server numbers (which are unique for each server)
 2. higher number gets priority over lower numbers
 3. remember highest seen proposal number
-4. remember highest accepted value
+4. remember value of the highest accepted proposal number.
+
+
+**Problems with Basic Paxos**
+- Liveness is not guaranteed (solution is to randomize restarts)
+
+### Multi-Paxos
+
