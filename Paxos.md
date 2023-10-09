@@ -1,4 +1,5 @@
 #distributed_systems #consensus
+**Leslie Lamport**
 distributed consensus algorithm
 
 ### Basic Paxos

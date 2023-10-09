@@ -1,3 +1,5 @@
+#distributed_systems #consensus 
+**Authors:**  Diego Ongaro, John Ousterhout
 A Linearizable Replicated Log
 
 - election safety
@@ -77,3 +79,10 @@ solution:
 	- service tells raft it has snapshotted through some log entry
 	- raft discards log before that entry
 	- a server can create a snapshot and discard log at any time
+
+
+
+
+- can leader execute read operations locally? (in real life read requests are higher than write requests - read request is a no-op write request)
+- why might that be a bad idea? - because at some point of time we dont know if we are still the leader, when answering new requests. we must not return stale data
+- how could we make the idea work? - lease based mechanism, where a leader maintains a time bound lease - as long as it holds the lease it will be leader. give lease and calculate duration from when the lease is granted at the start of the RPC call from leader.
