@@ -34,7 +34,10 @@ we can see still the blue might be overwritten by red if the accept request come
 1. order proposals with unique number. how unique - append server numbers (which are unique for each server)
 2. higher number gets priority over lower numbers
 3. remember highest seen proposal number
-4. remember value of the highest accepted proposal number.
+4. remember the highest accepted proposal number.
+5. remember the accepted value
+
+![Basic Paxos](./ds_images/basic_paxos.png)
 
 
 **Problems with Basic Paxos**
