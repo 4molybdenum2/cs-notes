@@ -3,9 +3,9 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 
 - [[Map Reduce]]
 - [[Google File System (GFS)]]
-- [[Co-routine/RPC]]
+- [[Coroutine - RPC]]
 - [[Primary-Backup Replication]]
 - [[Raft]]
 - [[Paxos]]
 - [[MongoDB Pull-Based Replication]]
-- [[PBFT/Byzantine Fault Tolerance]]
+- [[Byzantine Fault Tolerance]]
