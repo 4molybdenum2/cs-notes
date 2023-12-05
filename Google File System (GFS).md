@@ -116,7 +116,6 @@ relaxed consistency model #consistency
 
 
 **Garbage Collection**
-
 - lazy deletion - three days interval with regular scan
 - master logs deletion immediately, renames file to hidden name, can be renamed to restore
 - identifies orphaned chunks, erases metadata for those chunks
@@ -131,7 +130,7 @@ relaxed consistency model #consistency
 
 
 **Stale Replica Detection**
-- when new lease is granted - chunk version no. updated for all uptodate replicas
+- when new lease is granted - chunk version no. updated for all up-to-date replicas
 - master will detect stale replica by chunk version no.
 - removes stale replicas in regular garbage collection
 - master also informs clients which chunkserver holds lease with latest version no. so that uptodate info is accessed

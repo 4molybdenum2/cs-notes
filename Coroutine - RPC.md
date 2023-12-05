@@ -57,7 +57,7 @@ stackless coroutine:
 - when is discarding old ids safe?
 	- unique client id
 	- per-client RPC sequence numbers
-	- - client includes _"seen all replies `<= X`"_ with every RPC much like TCP sequence \#s and ACKs
+	- client includes _"seen all replies `<= X`"_ with every RPC much like TCP sequence \#s and ACKs
 	- or only allow client one outstanding RPC at a time s.t. arrival of `seq+1` allows server to discard all `<= seq`
 	- or client agrees to keep retrying for `< 5` minutes server discards after 5+ minutes
 - How to handle duplicate request while original is still executing?

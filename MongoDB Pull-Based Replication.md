@@ -48,7 +48,7 @@ Strongly consistent replication in MongoDB
 - can violate safety if we follow the rule -> entry considered committed once replicated on a majority of servers.
 - therefore send term of syncing server in UpdatePosition RPC which will cause stale primaries to step down if higher term received and update its own term
 - primary can also fetch data from replicas of lower terms as long as it has not generated new oplog entries with new term and appended it to its own oplog
-- in mongodb to commit in term T a primary has to receive updateposition rpcs from a majority with term T 
+- in mongodb to commit in term T a primary has to receive update position RPCs from a majority with term T 
 
 
 - sync source selection through heartbeat rpcs

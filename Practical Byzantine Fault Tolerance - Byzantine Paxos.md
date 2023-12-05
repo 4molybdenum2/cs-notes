@@ -28,7 +28,7 @@ Algorithm for state machine replication that tolerates Byzantine Faults
 
 
 
-**Byzantine Paxos**
+**Byzantine Paxos** (Leslie Lamport)
 In the naive case we can increase the quorum size to q' = q + f where f are malicious
 and q = 2f+1, we can think that this will work as f+1 real acceptors can outvote the liars. But in actuality this fails, because in of leader failure in phase 2b of paxos the algorithm can get stuck with f acceptors proposing one value and f fake acceptors voting another value.
 

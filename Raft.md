@@ -42,7 +42,7 @@ A Linearizable Replicated Log
 
 
 **Figure 8**:
-- the leader has to check for the condition that at least one new entry from the its term must also be stored on majority of servers.
+- the leader has to check for the condition that at least one new entry from its term must also be stored on majority of servers.
 
 
 **Timing and availability**:
@@ -70,7 +70,7 @@ A Linearizable Replicated Log
 
 - cant forget uncommitted operations
 - need to replay if crash restart
-- may be needed to bring other servers up-to-dat
+- may be needed to bring other servers up-to-date
 
 solution:
 - create persistent snapshot

@@ -8,4 +8,10 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Raft]]
 - [[Paxos]]
 - [[MongoDB Pull-Based Replication]]
-- [[Byzantine Fault Tolerance]]
+- [[Practical Byzantine Fault Tolerance - Byzantine Paxos]]
+- [[Eventual Consistency]]
+- [[Sequential Consistency]]
+- [[Causal Consistency]]
+- [[Distributed Transactions]]
+- [[Spanner]] 
+- 

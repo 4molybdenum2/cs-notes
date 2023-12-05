@@ -53,7 +53,7 @@ Map-reduce is a programming paradigm for working with large datasets.
 **Execution:**
 - input processed in M splits (16Mb - 64Mb) and intermediate key space is partitioned into R splits, partitioning function and R is specified by the user,
 - single master, rest workers, M map tasks, R reduce tasks.
-- k-v pairs buffered in mem, periodically written to local disk
+- k-v pairs buffered in memory, periodically written to local disk
 - reduce worker sorts intermediate k-v pairs -> passes to reduce function
 - Results available in R output files
 
@@ -61,7 +61,7 @@ Map-reduce is a programming paradigm for working with large datasets.
 - master pings workers periodically
 - if worker fails, marks worker as failed and resets task back to idle state. completed map tasks needs to be re-executed again because the results are stored on the local disk of the machine that failed and might be unavailable. completed reduce tasks dont need to be rescheduled because results are in a global file system.
 - all workers are notified of a re-execution of a failed map task.
-- master writes periodic checkpoints, aborts map reduce computation, users can retry.
+- master failure - master writes periodic checkpoints, aborts map reduce computation, users can retry.
 - atomic commits of map and reduce tasks to produce non-faulting sequential execution of a program.
 
 **Locality of data**
