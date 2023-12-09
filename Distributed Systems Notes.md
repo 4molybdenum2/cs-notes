@@ -11,7 +11,11 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Practical Byzantine Fault Tolerance - Byzantine Paxos]]
 - [[Eventual Consistency]]
 - [[Sequential Consistency]]
-- [[Causal Consistency]]
+- [[Causal Consistency + COPS]]
+- [[Fork-join Consistency (Depot)]]
 - [[Distributed Transactions]]
 - [[Spanner]] 
+- [[Optimistic Concurrency Control]]
+- [[Proof of Work - Bitcoin]]
+- [[Permissioned Chain]]
 - 
