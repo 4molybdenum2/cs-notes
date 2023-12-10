@@ -9,6 +9,7 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Paxos]]
 - [[MongoDB Pull-Based Replication]]
 - [[Practical Byzantine Fault Tolerance - Byzantine Paxos]]
+- [[Lamport Clocks and Vector Clocks]]
 - [[Eventual Consistency]]
 - [[Sequential Consistency]]
 - [[Causal Consistency + COPS]]
