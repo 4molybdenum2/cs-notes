@@ -56,6 +56,9 @@ If a tx is in the block chain, can the system double spend its coins?
 
 
 
+- For a brief period of time there might be double spending in a blockchain due to a fork
+- dont believe the blockchain until there is a couple more blocks in the blockchain
+
 
 **Bitcoin**:
 
@@ -63,4 +66,13 @@ If a tx is in the block chain, can the system double spend its coins?
 - block fee halved every (210000 blocks) 4 years (total amount around 21 million)
 - tx fee - incentives
 - difficulty adjusted every 2016 blocks (~2 weeks) to avoid frequent forking
-- 
+
+
+### Optimization
+ 
+ 1. Merkle tree
+- leaf nodes has data
+- non-leaf nodes has hash of children nodes
+- the merkle root hash (32 bytes) is in the block chain header
+- this enables fast verification of the chain
+    - no need to compute hash for all transaction content.
