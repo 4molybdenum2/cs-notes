@@ -20,3 +20,21 @@ Conditions for a node to accept updates:
 - history hash of receiving node must match hash computed by C across every node's last update at time dVV.
 - u's timestamp must be atleast a constant times C's current wall-clock time
 
+
+
+**Handling Conflicts**:
+1. filtering
+2. replacing
+
+
+FCC (fork causal consistency) requires that once two nodes have been forked they can never observe each other's updates after the fork junction.
+
+Paritioning nodes in such a way is unacceptable in many systems. depot handles this by a property called: **joining forks**
+
+
+**Joining Forks:**
+
+To join forks, nodes use a simple coping strategy: they convert concurrent updates by a single faulty node into concurrent updates by a pair of virtual nodes. A node that receives these updates handles them as it would “normal” concurrency: it applies both sets of updates to its state and, if both branches modify the same object, it returns both conflicting updates on reads (conflict resl). We now fill in some details.
+
+
+
