@@ -24,7 +24,7 @@ Problem: values can be overwritten even if accepted by majority by a rogue propo
 **Case 3:** prepare a proposer first to see if value is already accepted
 Problem: 
 
-![conflict 1](./ds_images/conflicting_choice1.png)
+![conflict 1](conflicting_choice1.png)
 
 we can see still the blue might be overwritten by red if the accept request comes later for server 3. this happens only because as s1 accept was older it didn't get to learn about blue accept before sending the RPCs. we must reject older proposals. how to know older?
 
@@ -37,7 +37,7 @@ we can see still the blue might be overwritten by red if the accept request come
 4. remember the highest accepted proposal number.
 5. remember the accepted value
 
-![Basic Paxos](./ds_images/basic_paxos.png)
+![Basic Paxos](basic_paxos.png)
 
 
 **Problems with Basic Paxos**

@@ -62,7 +62,7 @@ conflict resolution using vector clocks:
 
 strawman 2:
 
-sink operator
+sync operator
 
 sync(k, v#) -> waits until all datacenters have atleast that version 
 

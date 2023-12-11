@@ -2,7 +2,7 @@
 Wide area transactions
 
 R/W transactions: 2PC + 2PL (Paxos groups)
-R/O transactions: Snapshot isolation + synchronized clocks (not perfectly synchronized)
+R/O transactions: Snapshot isolation + synchronized clocks + true time
 
 
 R/W txs:
@@ -21,7 +21,7 @@ R/O txs:
 - almost 10x latency improvements for r/o txs
 - needs to be serializable - results that bunch of txs must yield, must be the same as a serial order of such txs
 - external consistency -> linearizability (txs must be real-time order, tx must not see stale data)
-- reading latest value -> not serializable (doesnt work)
+- reading latest value -> not serializable (doesn't work)
 - **Snapshot Isolation**:
 	- **assume: all the computers have synchronized clocks**
 	- assume: every tx is assigned a timestamp (taken from the clocks)

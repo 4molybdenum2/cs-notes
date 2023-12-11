@@ -55,7 +55,7 @@ We will try to attach proof to either of this malicious messages to counter byza
 1. Phase 1a -> can lie by sending a very large value, but can't break safety
 2. Phase 1b -> attach proof of previous P2a accept, we assume sender is not malicious (if in the previous phase 2a the current value was ever sent out, then it was proposed by the leading acceptor in the previous ballot)
 
-![proof for 1b from 2a](./ds_images/proof2a-1b.png)
+![proof for 1b from 2a](proof2a-1b.png)
 
 Here we can see that acceptor 3 sends a message with a proof that it received authentic value from 2a, whereas acceptor 4 can't do that so it is rejected.
 

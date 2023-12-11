@@ -13,7 +13,7 @@ Hyperledger Fabric:
 - fabric typically executes transactions before reaching final agreement 
 - confidentiality is preserved by permissioned peers (passive replication)
 
-![execute order validate](./ds_images/execute_order.png)
+![execute order validate](execute_order.png)
 - fabric tolerates non-deterministic code by execution phase before getting endorsements
 - prevents DoS attacks in such way
 	

@@ -15,6 +15,7 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[2PL and 2PC]]
 - [[Causal Consistency + COPS]]
 - [[Fork-join Consistency (Depot)]]
+- [[Percolator]]
 - [[Distributed Transactions]]
 - [[Spanner]] 
 - [[Optimistic Concurrency Control]]
