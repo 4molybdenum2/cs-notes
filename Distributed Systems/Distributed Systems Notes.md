@@ -1,5 +1,7 @@
 #distributed_systems
 These are moderately short notes for CSE-534 (Distributed Systems) at Stony Brook University
+Short notes for the following topics can also be found here:   [mpaxos](http://mpaxos.com)
+
 
 - [[Map Reduce]]
 - [[Google File System (GFS)]]
@@ -19,6 +21,7 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Distributed Transactions]]
 - [[Spanner]] 
 - [[Optimistic Concurrency Control]]
+- [[More Isolation Levels]]
 - [[Proof of Work - Bitcoin]]
 - [[Permissioned Chain]]
 - [[Filecoin]]
