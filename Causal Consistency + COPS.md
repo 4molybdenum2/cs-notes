@@ -104,4 +104,3 @@ dependencies-----------------------
 - else hold onto update
 - cascading dependencies can slow down the system quite a lot -> problem with causal consistency
 - after put context is replaced by the v# for the latest put
-- 

@@ -12,6 +12,7 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Lamport Clocks and Vector Clocks]]
 - [[Eventual Consistency]]
 - [[Sequential Consistency]]
+- [[2PL and 2PC]]
 - [[Causal Consistency + COPS]]
 - [[Fork-join Consistency (Depot)]]
 - [[Distributed Transactions]]
@@ -20,4 +21,3 @@ These are moderately short notes for CSE-534 (Distributed Systems) at Stony Broo
 - [[Proof of Work - Bitcoin]]
 - [[Permissioned Chain]]
 - [[Filecoin]]
-- 
