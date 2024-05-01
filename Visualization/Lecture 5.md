@@ -56,7 +56,7 @@ K-means clustering algorithm:
 1. select k
 2. select k centroid randomly
 3. assign points to each cluster centroid one by one by calculating euclidian distance from centroid
-4. find mean of each cluster these are now centroid of cluster, and go to 3 again
+4. find mean of each cluster these are now centroid of cluster, and go to 3 again if clustering changed
 5. if clustering didn't change stop
 
 
@@ -87,15 +87,25 @@ weakness:
 5. eliminate highly correlated values (kms v/s miles)
 
 **Redundancy sampling:**
-1. eliminate redundant data (cluster data with small ranges e and only keep cluster centroids, store size of clusters to store importance)
-2. how do we find e? -> compute histogram of distances, choose a reasonable threshold from the left
+1. eliminate redundant data (cluster data with small ranges **e** and only keep cluster centroids, store size of clusters to store importance)
+2. how do we find **e**? -> compute histogram of distances, choose a reasonable threshold from the left
 
 **Reservoir sampling:**
 
 
 **CURE High dimensionality sampling:**
 
+Sampling of well scattered points:
 
+Alg:
+1. empty S set
+2. find mean, pick farthest point as first point for S
+3. iteratively pick points farthest in S
+
+Complexity O(m.n^2)
+1. n total number of points
+2. m is the desired number of points
+3. need kd-tree, heap for efficiency
 
 
 **Dimenstionality Reduction**

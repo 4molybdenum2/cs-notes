@@ -36,6 +36,10 @@ Noisy data:
 
 Inconsistencies and redundant data should be removed
 
+
+synonymy - different labels with same meaning
+polysemy -  same label with different meaning
+
 Data fusion v/s data privacy?
  obfuscate for protection:
  1. k-anonymity (generalize)
@@ -48,6 +52,10 @@ Sampling:
 1. randomized
 2. stratified
 
+Adaptive sampling:
+1. Create bins of some kind - also called strata
+2. size of bin represents its size in population
+3. guides the number of samples - bigger bins get more samples
 
 
 Data augmentation in Machine learning:
