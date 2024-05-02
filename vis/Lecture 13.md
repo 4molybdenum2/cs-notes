@@ -2,7 +2,7 @@
 
 Hierarchies:
 1. Node-edge layout for a hierarchical network
-2. color maps to quantitative info
+2. color ->  quantitative info
 
 Dendrogram:
 1. specifically used to classify classification hierarchies
@@ -29,5 +29,9 @@ Chord diagrams:
 	4. supply demand graphs
 9. Sunburst
 10. Treemaps - squarified, slice, slice and dice, strip
+	1. cushioned tree maps: textured squares
+		1. due to discontuinity in texture, lines are not required anymore to separate
+		2. more space can be used for displaying nodes
+		3. much smaller nodes can be shown on treemap
 11. Voronoi treemaps - based on Voronoi tessellation
 

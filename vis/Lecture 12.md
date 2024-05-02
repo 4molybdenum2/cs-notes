@@ -31,8 +31,8 @@ unfolding the earth myriahedral projections:
 
 
 
-recmaps
-grid maps
+recmaps / rectangular cartograms
+grid maps (honeycomb grids - covid 19 trends?)
 flow maps -transport of passengers in ireland
 
 time varying maps

@@ -3,6 +3,7 @@ Time varying and streaming data:
 Temporal relationships are difficult to discern:
 1. events take place across spatially disjoint locations
 2. temporal ordering can be hard to figure out
+3. because it can be expressed in relative frame
 
 Different types of time series data:
 1. discrete v/s interval
@@ -11,7 +12,9 @@ Different types of time series data:
 4. ordered v/s branching v/s time with multiple perspectives
 
 ThemeRiver
-River widens or narrows according to changes in collective strength of selected themes in underlying docs
+1. River widens or narrows according to changes in collective strength of selected themes in underlying docs
+2. centered on y axis
+3. can take negative data
 
 StreamGraphs
 
@@ -19,12 +22,25 @@ Stacked Area Charts
 
 Medical Data:
 - time signals
+- Lifelines - patient centric
+- Lifeline2 - pattern centric
+	- goals:
+		- brings out temporal categorical data patterns
+		- categorical event data such as diagnosis, treatments, complaints
+	- features:
+		- allows users to manipulate multiple resources simultaneously
+		- understand relative temporal relationship between records
+		- 3 operators: align, rank and filter
+		- temporal summaries allows multiple grouped records to be compared
+		- for example, quantity of different medicine given to a patient can be seen as a streamgraph
+
+
 
 Cyclic Patterns:
 1. time data are often cyclin (periodic) and can be represented using cycles and spikes
 
 
-Oculus GeoTime:
+OculusInfo GeoTime:
 1. X,Y,T
 2. T represents time on X,Y coordinate
 
@@ -50,11 +66,11 @@ feature evolution
 
 
 CluStream is an algorithm that can deal with clustering changes over time
-- online microclustering - process stream in real time - maintain microclusters of data
-- offlien macroclustering - further summarizes results of clustering, provides users with more concise understanding of the clustering over different time horizons and levels of temporal granularity
+- online micro-clustering - process stream in real time - maintain micro-clusters of data
+- offline macro-clustering - further summarizes results of clustering, provides users with more concise understanding of the clustering over different time horizons and levels of temporal granularity
 
 
-Microclustering algorithm:
+Micro-clustering algorithm:
 1. k m-clusters
 2. new point needs to be assigned or new cluster needs to be created
 3. determine distance of the point from the centroids of the m-clusters
@@ -66,8 +82,22 @@ Microclustering algorithm:
 
 store microcluster analytics periodically
 - at varying levels of granularity
+- recent snapshots have lower level of granularity than older snapshots
+
+
+Standard pairwise distance:
+
+shortcomings;
+1. designed for time series of equal length
+2. cannot address distortions on temporal (contextual) attributes
 
 Dynamic Time warping distance:
+**constaints**
+1. no skipping of beginning or end of the sequence
+2. no jumps
+3. monotonicity - can't go back in time
+
+
 - can better accomodate local mismatches
 -  The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
 - The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)

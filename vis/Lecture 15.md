@@ -5,7 +5,7 @@ Visual analytics system design and evaluation:
 Task #1: Classification
 1. classification model: absolute or probabilistic
 2. scoring a class
-3. humans label the samples
+3. humans label the samples - only label samples critical to model, can be expensive
 4. set initial rule and refine rule to get better data samples
 
 Task #2: Regression
@@ -14,7 +14,8 @@ Task #2: Regression
 3. human factor: detect outliers
 
 Task #3: Similarity Matching
-1. human factor: identify effective features
+1. classification, regression, clustering can help
+2. human factor: identify effective features
 
 Task #4: Clustering
 1. preliminary domain exploration
@@ -23,9 +24,12 @@ Task #4: Clustering
 
 Task #5: Co-occurence grouping
 1. find association between entities colocated together
-2. difference to clustering: in clustering it is based on the object's attributes, whereas in this it is based on objects placed together
+2. **difference to clustering: in clustering it is based on the object's attributes, whereas in this it is based on objects placed together**
+3.  human factor: labeling, verification
 
 Task #6: Profiling
+1. anomaly and fraud detection
+ human factor: labeling, verification
 
 Task #7: Link Prediction
 
@@ -35,7 +39,8 @@ Task #8: Data Reduction
 3. sampling
 
 Task #9: Causal Modeling
-
+1. understand what action or events influence others
+2. human factor: verify the model, correct it - because mostly we have to work with observational data
 
 
 Steps for Visualization Tasks:
