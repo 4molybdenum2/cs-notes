@@ -45,11 +45,15 @@ Task #9: Causal Modeling
 
 Steps for Visualization Tasks:
 1. Domain Problem Characterization
-2. Data/operation abstraction design - map from domain/vocabulary to abstraction
+	1. what are the problems, what is making tasks slow and tedious
+2. Data/operation abstraction design 
+	1. map from domain/vocabulary to abstraction
 3. Encoding/interaction technique design - 
 	1. visual encoding - how to best show the data
 	2. Interaction design - how to best support the intent the user has
-	3. Algorithm design
+	3. ex: draw graphs, nodes, links, compute score, allow user to test links
+4. Algorithm design
+	1. ex: partial correlation followed by causal inferencing
 
 
 
@@ -60,12 +64,13 @@ Hypothesis Testing:
 	- this is the null hypothesis
 	- statistical procedures reject or accept the null hypothesis
 
+Null hypothesis: **assumes no difference**
 
 ANOVA:
 1. want to find out the difference between groups of data
 2. find variance in each group
 3. find variance between groups
-4. F = between groups / within groups, larger F means reject Null Hypothesis
+4. F = between groups / within groups,  larger F means reject Null Hypothesis
 
 
 F(b,w)
@@ -79,6 +84,9 @@ For non significant effects  use "ns" if F < 1.0 and p > 0.05 if F > 1.0
 example:
 F(1,9) = 0.626, ns
 
+if n is the number of test conditions and m is the number of participants, the degrees of freedom are: 
+1. effect (n-1)
+2. residual (n-1)(m-1)
 
 Post Hoc Comparison Test to determine which conditions differed significantly from one another
 Ex: Scheffe Post Hoc comparisons

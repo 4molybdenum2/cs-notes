@@ -19,10 +19,10 @@ Edward Tufte's views
 
 
 Principles that determine graphical integrity:
-1. representation of numbers must be directly proportional to the numbers
-2. clear and detailed labeling
-3. show data variations not design variations
-4. in time series display of money show standardized units
+1. representation of numbers must be directly **proportional to the numbers**
+2. clear and **detailed labeling**
+3. show data variations **not design variations**
+4. in time series display of money show **standardized units**
 5. number of info carrying dimensions must not exceed dataset dimensions
 6. dont quote out of context data
 7. convincing graphics must demonstrate cause and effect
@@ -31,12 +31,12 @@ Principles that determine graphical integrity:
 but what about engagement?
 - if used properly pictograms do not inferere with understanding of vis
 - vis that are memorable at glance are also capable of transmission of right messages
-- redundancy helps effectively communicate the message
+- **redundancy helps effectively communicate the message**
 
 
 Important for memorability:
 1. color
-2. inclusion of human recognisable object
+2. inclusion of human recognizable object
 
 
 Graphical visualizations for more engagement

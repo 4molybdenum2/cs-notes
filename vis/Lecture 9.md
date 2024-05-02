@@ -11,7 +11,7 @@ When to cluster?
 	1. entropy measures lack of order
 	2. start with all attributes and compute distance entropy
 	3. greedily eliminate attributes that reduce entropy most
-	4. stop when entropy no longer 
+	4. stop when entropy no longer decreases
 2. Hierarchical Clustering
 	1. In data mining and statistics, hierarchical clustering (also called hierarchical cluster analysis or HCA) is a method of cluster analysis that seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two categories: **Agglomerative**: This is a "bottom-up" approach: Each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy. **Divisive**: This is a "top-down" approach: All observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
 	2. Agglomerative Clustering
@@ -25,7 +25,7 @@ When to cluster?
 			1. **single linkage methods can chain closely related points** to discover clusters of arbitrary shape. susceptible to noise
 			2. **complete linkage tends to create *spherical* clusters** with similar diameter. gives too much importance to data points on the fringe. no way to undo mistake. will split up large odd shaped clusters into smaller spherical shapes
 			3. group average and wards method are more robust to noise due to use of multiple linkages
-		4. **DBSCAN** - Density Based Spatial Clustering of applications with noise, groups together points that are close to each other based on a density criterion
+		4. **DBSCAN** - **Density Based Spatial Clustering of applications with noise**, groups together points that are close to each other based on a density criterion
 			1. - A point p is a _core point_ if at least minPts points are within distance ε of it (including p).
 				- A point q is _directly reachable_ from p if point q is within distance ε from core point p. Points are only said to be directly reachable from core points.
 				- A point q is _reachable_ from p if there is a path _p_1, ..., _pn_ with _p_1 = _p_ and _pn_ = _q_, where each _p__i_+1 is directly reachable from pi. Note that this implies that the initial point and all points on the path must be core points, with the possible exception of q.
